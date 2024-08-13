@@ -62,7 +62,7 @@ export default function Navbar() {
                 Matches
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 className="nav-link"
                 to="/community"
@@ -73,7 +73,7 @@ export default function Navbar() {
               >
                 Community
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link
                 className="nav-link"
