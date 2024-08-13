@@ -10,8 +10,8 @@ export default function ChatBot() {
   const chatboxRef = useRef(null);
   const [isShow, setIsShow] = useState(false);
  
-  const API_KEY = "DUMMY";
-  // const API_KEY = "AIzaSyCFdmkRpx2699Dsj92q5Yxj2fUPAOrh9-s";
+  // const API_KEY = "DUMMY";
+  const API_KEY = "AIzaSyCFdmkRpx2699Dsj92q5Yxj2fUPAOrh9-s";
 
   const generateResponse = async (incomingChatLi) => {
     const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;

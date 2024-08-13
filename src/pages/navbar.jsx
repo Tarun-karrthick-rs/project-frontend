@@ -86,18 +86,18 @@ export default function Navbar() {
                 ChatBot
               </Link>
             </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link"
-                    to="/FantasyPlay"
-                    style={{
-                      color: '#dec78d',
-                      marginLeft: 'auto',
-                    }}
-                  >
-                    Fantasy
-                  </Link>
-                </li>
+            <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="/FantasyPlay"
+                  style={{
+                    color: '#dec78d',
+                    marginLeft: 'auto',
+                  }}
+                >
+                  Fantasy
+                </a>
+              </li>
             <li className="nav-item">
               <Link
                 className="nav-link"
