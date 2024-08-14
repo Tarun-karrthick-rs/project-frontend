@@ -83,13 +83,13 @@ export default function Navbar() {
                   marginLeft: 'auto',
                 }}
               >
-                ChatBot
+                Help
               </Link>
             </li>
             <li className="nav-item">
                 <a
                   className="nav-link"
-                  href="/FantasyPlay"
+                  href="https://fantasy-sport-frontend.vercel.app/"
                   style={{
                     color: '#dec78d',
                     marginLeft: 'auto',

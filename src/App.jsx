@@ -25,20 +25,19 @@ function App() {
   )
   return (
     <Router>
-      {/* <Navbar /> */}
       <Routes>
         <Route path='/' element={isAuthenticated?<Navbar/>:<HomeNav/>}></Route>
-        <Route path="/home" element={<Home />} />
-        <Route path="/news_feed" element={<Newsfeed />} />
-        <Route path="/matches" element={<Matches />} />
-        <Route path="/community" element={<Community />} />
-        <Route path="/chatbot" element={<Chatbot />} />
-        <Route path="/matches" element={<Matches />} />
+        <Route path="/home" element={isAuthenticated?<Home />:<HomeNav/>} />
+        <Route path="/news_feed" element={isAuthenticated?<Newsfeed />:<HomeNav/>} />
+        <Route path="/matches" element={isAuthenticated?<Matches />:<HomeNav/>} />
+        <Route path="/community" element={isAuthenticated?<Community />:<HomeNav/>} />
+        <Route path="/chatbot" element={isAuthenticated?<Chatbot />:<HomeNav/>} />
+        <Route path="/matches" element={isAuthenticated?<Matches />:<HomeNav/>} />
         <Route path="/loginin" element={<LogIn />} />
         <Route path="/signin" element={<SignUp />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/FantasyPlay" element={<FantasyPlayer />} />
+        <Route path="/about" element={isAuthenticated?<About />:<HomeNav/>} />
+        <Route path="/contact" element={isAuthenticated?<Contact />:<HomeNav/>} />
+        <Route path="/FantasyPlay" element={isAuthenticated?<FantasyPlayer />:<HomeNav/>} />
       </Routes>
     </Router>
   );
