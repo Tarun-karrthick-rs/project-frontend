@@ -1,5 +1,5 @@
 # The project vercel link
-[The real selection platform](https://fantasy-sport-frontend.vercel.app/)
+[The platform](https://project-frontend-eta-seven.vercel.app/)
 
 
 # Getting Started with Create React App
